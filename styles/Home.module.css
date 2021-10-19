@@ -1,11 +1,30 @@
+/* Make sure you make meaningful comments. Section styles up by page area */
+/* TODO: make padding responsive based on screen size */
+
+/* Welcome Area Styles */
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding-left: 6rem;
+  padding-right: 20rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   height: 100vh;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 280px;
+  height: 70px;
+  font-size: 20px;
+}
+
+.clubName {
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .main {
@@ -125,6 +144,8 @@
   margin-left: 0.5rem;
 }
 
+
+/* Put code here when the screen size is smaller. This will make the layout adaptable to smaller devices */
 @media (max-width: 600px) {
   .grid {
     width: 100%;
