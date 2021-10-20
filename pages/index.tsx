@@ -31,4 +31,5 @@ const Home: NextPage = () => {
   );
 };
 
+// Always export component functions so it can be used in other files
 export default Home;
