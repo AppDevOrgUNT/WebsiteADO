@@ -4,6 +4,8 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 
+// 
+
 const Home: NextPage = () => {
   return (
     <>
@@ -32,9 +34,9 @@ const Home: NextPage = () => {
             <h1 className={styles.clubName}>
               App Development Org
             </h1>
-            <h3 className={styles.clubDescription}>
+            <p className={styles.clubDescription}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </h3>
+            </p>
             <button className={styles.button} type="button">Join our Discord</button>
           </div>
         </div>
