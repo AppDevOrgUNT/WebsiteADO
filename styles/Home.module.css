@@ -79,6 +79,13 @@
 .header .push {
   margin-left: auto;
 }
+.sidebar{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 81px;
+    top: 362px;
+}
 
 /* .footer {
   width: 100%;

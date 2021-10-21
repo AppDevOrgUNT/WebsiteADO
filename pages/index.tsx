@@ -13,17 +13,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        {/* For navigation bar - temp ui */}
-        <div className={styles.row}>
-          <div className={styles.columnItem}>
-            <ul className={styles.navBar}>
-              <li><a href="">App Dev Org</a></li>
-              <li><a href="">Who We Are</a></li>
-              <li><a href="">Project Showcase</a></li>
-              <li><a href="">Upcoming Events</a></li>
-            </ul>
-          </div>
-
           {/* Welcome Area */}
           <div className={styles.container}>
             <h2>
@@ -37,7 +26,6 @@ const Home: NextPage = () => {
             </h3>
             <button className={styles.button} type="button">Join our Discord</button>
           </div>
-        </div>
       </Layout>
     </>
   );
