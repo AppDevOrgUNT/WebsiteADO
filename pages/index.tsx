@@ -58,6 +58,9 @@ const Home: NextPage = () => {
             <h2>
               Project Showcase
             </h2>
+            <div className={styles.pictureDecor}>
+              
+            </div>
             <p>
               MyChef, FindMyClass, etc
             </p>
