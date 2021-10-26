@@ -13,11 +13,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        {/* For navigation bar - temp ui */}
+        {/* For navigation bar - temp ui; make this sticky*/}
         <div className={styles.row}>
           <div className={styles.columnItem}>
             <ul className={styles.navBar}>
-              <li><a href="">App Dev Org</a></li>
+              <li><a href="#welcome">App Dev Org</a></li>
               <li><a href="">Who We Are</a></li>
               <li><a href="">Project Showcase</a></li>
               <li><a href="">Upcoming Events</a></li>
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           </div>
 
           {/* Welcome Area */}
-          <div className={styles.container}>
+          <div className={styles.sectionContainer} id="welcome">
             <h2>
               We are UNT&apos;s
             </h2>
@@ -40,6 +40,14 @@ const Home: NextPage = () => {
               e.preventDefault();
               window.location.href = 'https://discord.gg/eg3KqNsXEc';
             }}>Join our Discord</button>
+          </div>
+          
+
+          {/* Who we are */}
+          <div className={styles.sectionContainer}>
+            <h2>
+              Who We Are
+            </h2>
           </div>
         </div>
       </Layout>

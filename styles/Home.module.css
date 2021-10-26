@@ -2,9 +2,9 @@
 /* TODO: make padding responsive based on screen size */
 
 /* Welcome Area Styles */
-.container {
+.sectionContainer {
   min-height: 100vh;
-  padding-left: 6rem;
+  padding-left: 12rem;
   padding-right: 8rem;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   height: 100vh;
 }
 
-.container h2 {
+.sectionContainer h2 {
   font-size: 30px;
 }
 
@@ -39,6 +39,7 @@
 }
 
 .columnItem {
+  position: fixed;
   float: left;
   width: 10%;
   padding: 10px;
@@ -81,6 +82,9 @@
 .header .push {
   margin-left: auto;
 }
+
+/* Who we are styles */
+
 
 /* .footer {
   width: 100%;
