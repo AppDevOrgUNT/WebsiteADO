@@ -18,9 +18,9 @@ const Home: NextPage = () => {
           <div className={styles.columnItem}>
             <ul className={styles.navBar}>
               <li><a href="#welcome">App Dev Org</a></li>
-              <li><a href="">Who We Are</a></li>
-              <li><a href="">Project Showcase</a></li>
-              <li><a href="">Upcoming Events</a></li>
+              <li><a href="#whoweare">Who We Are</a></li>
+              <li><a href="#projshowcase">Project Showcase</a></li>
+              <li><a href="#events">Upcoming Events</a></li>
             </ul>
           </div>
 
@@ -44,12 +44,36 @@ const Home: NextPage = () => {
           
 
           {/* Who we are */}
-          <div className={styles.sectionContainer}>
+          <div className={styles.sectionContainer} id="whoweare">
             <h2>
               Who We Are
             </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
           </div>
-        </div>
+
+          {/* Project Showcase */}
+          <div className={styles.sectionContainer} id="projshowcase">
+            <h2>
+              Project Showcase
+            </h2>
+            <p>
+              MyChef, FindMyClass, etc
+            </p>
+          </div>
+
+          {/* Upcoming Events */}
+          <div className={styles.sectionContainer} id="events">
+            <h2>
+              Upcoming Events
+            </h2>
+            <p>
+              We'll put meeting times and other events
+            </p>
+          </div>
+
+        </div> {/* Row Div - may rename later */}
       </Layout>
     </>
   );
