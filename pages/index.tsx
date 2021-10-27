@@ -59,7 +59,7 @@ const Home: NextPage = () => {
               Project Showcase
             </h2>
             <div className={styles.pictureDecor}>
-              
+              {/* Have a horizontal scrolling bar here */}
             </div>
             <p>
               MyChef, FindMyClass, etc
