@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
+import App from "../components/whoWeAreComponents/MemberScroll.tsx";
 
 const Home: NextPage = () => {
   return (
@@ -51,6 +52,11 @@ const Home: NextPage = () => {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
+            <div className={styles.pictureDecor}>
+              {/* Have a horizontal scrolling bar here - may have to leave it for later */}
+              {/* <App/> */}
+              
+            </div>
           </div>
 
           {/* Project Showcase */}
@@ -58,12 +64,27 @@ const Home: NextPage = () => {
             <h2>
               Project Showcase
             </h2>
-            <div className={styles.pictureDecor}>
-              {/* Have a horizontal scrolling bar here */}
-            </div>
+
+            {/* make pretty using css */}
             <p>
-              MyChef, FindMyClass, etc
+              Project Title
             </p>
+
+            {/* make pretty using css */}
+            <p>
+              Project Date
+            </p>
+
+            {/* make pretty using css */}
+            <p>
+              Project Description
+            </p>
+            {/* Maybe add a hover functionality later */}
+            <button className={styles.button} type="button" onClick={(e) => {
+              e.preventDefault();
+              window.location.href = 'https://github.com/AppDevOrgUNT';
+            }}>Learn More</button>
+            
           </div>
 
           {/* Upcoming Events */}
@@ -72,7 +93,7 @@ const Home: NextPage = () => {
               Upcoming Events
             </h2>
             <p>
-              We'll put meeting times and other events
+              We'll put meeting times and other events. Create a table similar to what's in the Figma
             </p>
           </div>
 
