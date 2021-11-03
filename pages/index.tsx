@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
-import App from "../components/whoWeAreComponents/MemberScroll.tsx";
+import MemberScroll from "../components/whoWeAreComponents/MemberScroll";
 
 const Home: NextPage = () => {
   return (
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
             </p>
             <div className={styles.pictureDecor}>
               {/* Have a horizontal scrolling bar here - may have to leave it for later */}
-              {/* <App/> */}
+              <MemberScroll/>
               
             </div>
           </div>
@@ -93,7 +93,7 @@ const Home: NextPage = () => {
               Upcoming Events
             </h2>
             <p>
-              We'll put meeting times and other events. Create a table similar to what's in the Figma
+              {"We'll put meeting times and other events. Create a table similar to what's in the Figma"}
             </p>
           </div>
 
