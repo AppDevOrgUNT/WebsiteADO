@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 
           {/* Welcome Area */}
           <div className={styles.sectionContainer} id="welcome">
-            <h2>
+          <h2 className={styles.weAreUNT}>
               We are UNT&apos;s
             </h2>
             <h1 className={styles.clubName}>
@@ -50,12 +50,13 @@ const Home: NextPage = () => {
 
           {/* Who we are */}
           <div className={styles.sectionContainer} id="whoweare">
-            <h2>
+            <h2 className={styles.sectionTitle}>
               Who We Are
             </h2>
-            <p>
+            <p className={styles.sectionDescription}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
+            <div className={styles.wireframe}></div>
             {/* <div className={styles.pictureDecor}>
               {/* Have a horizontal scrolling bar here - may have to leave it for later }
               <MemberScroll/>
@@ -65,39 +66,49 @@ const Home: NextPage = () => {
 
           {/* Project Showcase */}
           <div className={styles.sectionContainer} id="projshowcase">
-            <h2>
+            <h2 className={styles.sectionTitle}>
               Project Showcase
             </h2>
+            <div className={styles.wireframe}></div>
 
             {/* make pretty using css */}
-            <p>
-              Project Title
+            <p className={styles.projTitle}>
+              MyChef
             </p>
 
             {/* make pretty using css */}
-            <p>
-              Project Date
+            <p className={styles.projDate}>
+              Fall 2020
             </p>
 
             {/* make pretty using css */}
-            <p>
-              Project Description
+            <p className={styles.projDescription}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             {/* Maybe add a hover functionality later */}
-            <button className={styles.button} type="button" onClick={(e) => {
+            <button className={styles.primaryButton} type="button" onClick={(e) => {
               e.preventDefault();
               window.location.href = 'https://github.com/AppDevOrgUNT';
-            }}>Learn More</button>
+            }}>LEARN MORE</button>
             
           </div>
 
           {/* Upcoming Events */}
           <div className={styles.sectionContainer} id="events">
-            <h2>
+          <h2 className={styles.sectionTitle}>
               Upcoming Events
             </h2>
-            <p>
-              {"We'll put meeting times and other events. Create a table similar to what's in the Figma"}
+            <p className={styles.sectionDescription}>
+              We'll put meeting times and other events. Create a table similar to what's in the Figma
+            </p>
+          </div>
+          {/* Get in Touch */}
+          <div className={styles.sectionContainer} id="getInTouch">
+            <h2 className={styles.sectionTitle}>
+              Get in Touch!
+            </h2>
+            <p className={styles.sectionDescription}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
 
