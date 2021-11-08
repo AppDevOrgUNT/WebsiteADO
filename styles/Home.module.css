@@ -1,44 +1,67 @@
 /* Make sure you make meaningful comments. Section styles up by page area */
 /* TODO: make padding responsive based on screen size */
 
+/* Header styles */
+.header {
+  padding: 0rem 2rem;
+  background-color: red;
+  height: 6%;
+}
+
+
 /* Welcome Area Styles */
 .sectionContainer {
-  min-height: 100vh;
-  padding-left: 12rem;
-  padding-right: 8rem;
+  min-height: 80vh;
+  /* padding-left: 12rem;
+  padding-right: 8rem; */
   /* display: flex; */
+  padding: 5rem 2rem;
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  height: 100vh;
+  height: 50vh;
 }
 
 .sectionContainer h2 {
-  font-size: 30px;
-}
-
-.clubDescription {
-  padding-bottom: 30px;
-}
-
-/* For discord button and more */
-
-.button {
-  background-color: black;
-  color: white;
-  border: none;
-  width: 30%;
-  height: 10%;
-  font-size: 1.3em;
+  font-size: 1.8em;
 }
 
 .clubName {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 3.5em;
   font-weight: 700;
 }
 
-.columnItem {
+.clubDescription {
+  padding-bottom: 30px;
+  line-height: 1.5em;
+}
+
+/* For discord button and more */
+.primaryButton {
+  border: 5px solid #6CEBEB;
+  background-color: transparent;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: .8rem 1.5rem;
+  font-size: 1.2em;
+  color: #6CEBEB;
+  cursor: pointer;
+}
+
+.secondaryButton {
+  border: 5px solid #4846F4;
+  background-color: transparent;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-top: 4%;
+  padding: .8rem 1.5rem;
+  font-size: 1.2em;
+  color: #4846F4;
+  cursor: pointer;
+}
+
+/* .columnItem {
   position: fixed;
   float: left;
   width: 10%;
@@ -46,9 +69,9 @@
 }
 
 /* For the temporary navigation bar - turn into circles later*/
-.navBar li {
+/* .navBar li { */
   /* width: 15%; */
-  /* list-style: none; */
+  /* list-style: none; 
   display: block;
   margin: 0;
   padding-top: 10px;
@@ -56,11 +79,11 @@
 }
 
 /* Getting navigation area and welcome area in a row */
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */ 
 
 .main {
   padding: 5em 0;
@@ -194,4 +217,9 @@
     width: 100%;
     flex-direction: column;
   }
+
+
+  
+
+
 }
