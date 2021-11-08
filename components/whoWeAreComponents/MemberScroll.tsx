@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 
 import { LeftArrow, RightArrow } from "./arrows";
@@ -8,6 +7,7 @@ import { Card } from "./card";
 
 // NOTE: embrace power of CSS flexbox!
 import styles from "./arrowsOnBottomOrTop.module.css";
+
 // import "./hideScrollbar.css";
 // import "./firstItemMargin.css";
 
@@ -23,8 +23,20 @@ const getItems = () =>
 
 const MemberScroll= () => {
     const [items] = React.useState(getItems);
-
+    function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
+        const isThouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;
     
+        if (isThouchpad) {
+            ev.stopPropagation();
+            return;
+        }
+    
+        if (ev.deltaY < 0) {
+            apiObj.scrollNext();
+        } else if (ev.deltaY > 0) {
+            apiObj.scrollPrev();
+        }
+    }
 
     return (
         <>
@@ -66,3 +78,4 @@ function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
 }
 
 // ReactDOM.render(<App />, document.getElementById("root"));
+
