@@ -93,7 +93,7 @@ const Home: NextPage = () => {
               Upcoming Events
             </h2>
             <p>
-              We'll put meeting times and other events. Create a table similar to what's in the Figma
+              {"We'll put meeting times and other events. Create a table similar to what's in the Figma"}
             </p>
           </div>
 
