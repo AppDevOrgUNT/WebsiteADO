@@ -7,7 +7,7 @@ import { Card } from "./card";
 // import "./globalStyles.css";
 
 // NOTE: embrace power of CSS flexbox!
-import "./arrowsOnBottomOrTop.css";
+import styles from "./arrowsOnBottomOrTop.module.css";
 // import "./hideScrollbar.css";
 // import "./firstItemMargin.css";
 
@@ -21,8 +21,10 @@ const getItems = () =>
         .fill(0)
         .map((_, ind) => ({ id: getId(ind) }));
 
-function App() {
+const MemberScroll= () => {
     const [items] = React.useState(getItems);
+
+    
 
     return (
         <>
@@ -46,21 +48,21 @@ function App() {
         </>
     );
 }
-export default App;
+export default MemberScroll;
 
-// function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
-//     const isThouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;
+function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
+    const isThouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;
 
-//     if (isThouchpad) {
-//         ev.stopPropagation();
-//         return;
-//     }
+    if (isThouchpad) {
+        ev.stopPropagation();
+        return;
+    }
 
-//     if (ev.deltaY < 0) {
-//         apiObj.scrollNext();
-//     } else if (ev.deltaY > 0) {
-//         apiObj.scrollPrev();
-//     }
-// }
+    if (ev.deltaY < 0) {
+        apiObj.scrollNext();
+    } else if (ev.deltaY > 0) {
+        apiObj.scrollPrev();
+    }
+}
 
 // ReactDOM.render(<App />, document.getElementById("root"));
