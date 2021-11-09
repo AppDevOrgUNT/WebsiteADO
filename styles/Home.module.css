@@ -67,6 +67,11 @@
   cursor: pointer;
 }
 
+.primaryButton:hover {
+  color: #222222;
+  background-color: #6CEBEB;
+}
+
 .secondaryButton {
   border: 5px solid #4846F4;
   background-color: transparent;
@@ -77,6 +82,11 @@
   font-size: 1.2em;
   color: #4846F4;
   cursor: pointer;
+}
+
+.secondaryButton:hover {
+  color: #222222;
+  background-color: #4846F4;
 }
 
 /* .columnItem {
@@ -131,6 +141,7 @@
 .projTitle {
   font-size: 2em;
   line-height: .5;
+  font-weight: bold;
 }
 
 .projDate {
@@ -241,14 +252,16 @@
 } */
 
 
-/* Put code here when the screen size is smaller. This will make the layout adaptable to smaller devices */
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+/* Put code here when the screen size is bigger than phone size. This will make the layout adaptable to bigger devices */
+@media (min-width: 600px) {
+
+  .secondaryButton {
+    margin-left: 1%;
   }
 
-
+  .header{
+    height: 8%;
+  }
   
 
 

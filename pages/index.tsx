@@ -4,6 +4,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 import MemberScroll from "../components/whoWeAreComponents/MemberScroll";
+import Carousel from "../components/Carousel";
 
 const Home: NextPage = () => {
   return (
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
           </div> */}
 
           {/* Welcome Area */}
+          <Carousel/>
           <div className={styles.sectionContainer} id="welcome">
           <h2 className={styles.weAreUNT}>
               We are UNT&apos;s
