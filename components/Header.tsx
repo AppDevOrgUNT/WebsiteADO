@@ -3,8 +3,8 @@ import styles from "../styles/Home.module.css";
 import SocialLink from "./SocialLink"
 // import DiscordLogo from '../public/Discord-Logo-Color.png'
 // import InstagramLogo from '../public/Instagram_Glyph_Gradient_RGB.png'
-import DiscordLogo from '../public/discordIcon.png'
-import InstagramLogo from '../public/instagramIcon.png'
+import DiscordLogo from '../public/glowingDiscord.png'
+import InstagramLogo from '../public/glowingInstagram.png'
 
 const Header = () => (
   <header className={styles.header}>
