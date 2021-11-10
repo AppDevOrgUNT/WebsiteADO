@@ -33,11 +33,13 @@ const WhoWeAreCarousel = () => {
             {isDesktop ? (
                 // For bigger screen
                 <div className={styles.whoWeAreContainer}>
+                    {/* <div className={styles.projectLeftArrow}> &lt; </div> */}
                     {/* Add button here to iterate left of class member array */}
                     <div className={styles.wireframe}></div>
                     <div className={styles.wireframe}></div>
                     <div className={styles.wireframe}></div>
                     <div className={styles.wireframe}></div>
+                    <div className={styles.projectRightArrow}> &gt; </div>
                     {/* add button here to iterate right of the class member array */}
                 </div>
                 

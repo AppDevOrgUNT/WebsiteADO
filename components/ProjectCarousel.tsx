@@ -56,7 +56,7 @@ const ProjectCarousel = () => {
                         }}>LEARN MORE</button>
                     </div>
                     <div className={styles.projectImage}></div>
-                    <div className={styles.projectArrow}> Right Arrow </div>
+                    <div className={styles.projectRightArrow}> &gt; </div>
                 </div>
 
             ) : (

@@ -51,7 +51,7 @@
 }
 
 .clubDescription {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   line-height: 1.5em;
 }
 
@@ -264,6 +264,11 @@
     height: 8%;
   }
 
+  /* Welcome Page */
+  .clubDescription {
+    margin-bottom: 5px;
+  }
+
   /* Who we are styles */
   .whoWeAreContainer {
     width: 100%;
@@ -274,7 +279,8 @@
     box-sizing: border-box;
     margin-right: 1.5em;
     float: left;
-    width: 23%;
+    /* Width will change based on array iteration */
+    width: 20%;
   }
 
   .whoWeAreContainer:after {
@@ -294,6 +300,8 @@
   }
 
   .projectImage {
+    border: 5px solid #4846F4; 
+    box-sizing: border-box;
     margin-left: 2em;
     float: left;
     width: 40%;
@@ -302,13 +310,24 @@
     height: 500px;
   }
 
-  .projectArrow {
-    margin-left: 1.5em;
+  .projectLeftArrow {
+    margin-left: .5em;
     float: left;
     width: 5%;
     color: #f2f2f2;
     background-color: transparent;
-    margin-top: 12%;
+    margin-top: 13%;
+    font-size: 3em;
+  }
+
+  .projectRightArrow {
+    margin-left: .5em;
+    float: left;
+    width: 5%;
+    color: #f2f2f2;
+    background-color: transparent;
+    margin-top: 13%;
+    font-size: 3em;
   }
 
   .projectContainer:after {

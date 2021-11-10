@@ -19,7 +19,7 @@ const Header = () => (
     </h4>
 
     <SocialLink icon={InstagramLogo} destination="https://instagram.com/ado_unt" altText="Follow us on instagram" className={styles.push} />
-    <SocialLink icon={DiscordLogo} destination="https://discord.gg/eg3KqNsXEc" altText="Join us on discord" />
+    <SocialLink icon={DiscordLogo} destination="https://discord.gg/eg3KqNsXEc" altText="Join us on discord"/>
 
     {/* <NavBar/> */}
   </header>
