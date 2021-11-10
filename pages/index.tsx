@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 
           {/* Welcome Area */}
           <div className={styles.sectionContainer} id="welcome">
-          <h2 className={styles.weAreUNT}>
+            <h2 className={styles.weAreUNT}>
               We are UNT&apos;s
             </h2>
             <h1 className={styles.clubName}>
