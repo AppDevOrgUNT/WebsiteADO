@@ -36,7 +36,7 @@ const Home: NextPage = () => {
               Application Development Organization
             </h1>
             <p className={styles.clubDescription}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Our purpose is to is help UNT students pursue their interest in application development with a hands-on and collaborative experience in designing, building, and programming applications on many platforms, including Web, iOS, and Android.
             </p>
             {/* Maybe add a hover functionality later */}
             <button className={styles.primaryButton} type="button" onClick={(e) => {
@@ -83,6 +83,9 @@ const Home: NextPage = () => {
             <p className={styles.sectionDescription}>
               We'll put meeting times and other events. Create a table similar to what's in the Figma
             </p>
+            {/* Make table component and call it here using <componentName/> */}
+
+
           </div>
           {/* Get in Touch */}
           <div className={styles.sectionContainer} id="getInTouch">
